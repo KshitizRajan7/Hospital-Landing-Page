@@ -12,7 +12,7 @@ const Hero = () => {
         <div>
           {/* Main heading */}
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-            Your Health, Our Priority
+            Everything else is urgent until you get sick.
           </h1>
 
           {/*  description */}
@@ -24,7 +24,7 @@ const Hero = () => {
           {/* Call-to-action button linking to services section */}
           <a
             href="#services"
-            className="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition"
+            className="mt-6 inline-block px-6 py-3 bg-teal-400 text-white font-medium rounded-lg shadow hover:bg-teal-700 transition"
           >
             View Services
           </a>
@@ -33,7 +33,7 @@ const Hero = () => {
         {/* Right side: Image */}
         <div className="flex justify-center">
           <img
-            src="zxc" // Replace "zxc" with your actual image path or import
+            src="https://plus.unsplash.com/premium_photo-1681843129112-f7d11a2f17e3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG9zcGl0YWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500" // Replace "zxc" with your actual image path or import
             alt="Hospital"
             className="rounded-xl shadow-lg w-full max-w-md object-cover"
           />

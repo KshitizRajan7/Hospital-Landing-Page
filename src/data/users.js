@@ -1,3 +1,4 @@
+// dummy user data
 export const users = [
   {
     id: 1,

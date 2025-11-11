@@ -1,0 +1,1 @@
+// will be using to manage global state (like user data, login info, etc..)

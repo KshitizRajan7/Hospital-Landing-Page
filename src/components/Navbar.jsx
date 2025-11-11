@@ -47,7 +47,7 @@ const Navbar = () => {
             <a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a>
             <Link
               href="/login"
-              className="ml-2 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700"
+              className="ml-2 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm bg-teal-400 text-white hover:bg-teal-700"
             >
               Login
             </Link>

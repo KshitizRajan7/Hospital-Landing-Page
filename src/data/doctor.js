@@ -1,3 +1,4 @@
+//dummy data for doctors kina ki we are not using backend 
 export const doctors = [
   { id: 1, name: "Dr. Rajan Sharma", department: "Cardiology", specialization: "Heart Specialist" },
   { id: 2, name: "Dr. Anisha Thapa", department: "Neurology", specialization: "Brain Specialist" },

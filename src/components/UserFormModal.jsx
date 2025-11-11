@@ -14,7 +14,7 @@ export default function UserFormModal({ user, doctors, onSave, onClose }) {
     assignedDoctor: "",
   });
 
-  // Load data if editing a user
+  // Loading data if editing a user
   useEffect(() => {
     if (user) setFormData(user);
   }, [user]);

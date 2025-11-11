@@ -14,15 +14,15 @@ const LoginPage = () => {
  const handleLogin = (e) => {
   e.preventDefault();
 
-  // Store dummy auth & role
+  // Storing dummy auth & role kina ki we are not using backend 
   localStorage.setItem("authToken", "dummy_token_123");
   localStorage.setItem("role", role);
 
-  // Store a dummy name for display
-  const dummyName = email.split("@")[0]; // use the email username as dummy name
+  // Storing a dummy name for display
+  const dummyName = email.split("@")[0]; // using the email username as dummy name
   localStorage.setItem("userName", dummyName);
 
-  // Redirect based on role
+  // Redirecting based on role
   if (role === "Admin") router.push("/admin");
   else if (role === "Doctor") router.push("/doctor");
   else router.push("/users");

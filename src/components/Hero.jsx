@@ -21,7 +21,7 @@ const Hero = () => {
             doctors, modern equipment, and 24/7 emergency support.
           </p>
 
-          {/* Call-to-action button linking to services section */}
+          {/* button linking to services section */}
           <a
             href="#services"
             className="mt-6 inline-block px-6 py-3 bg-teal-400 text-white font-medium rounded-lg shadow hover:bg-teal-700 transition"

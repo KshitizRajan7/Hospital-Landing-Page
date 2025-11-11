@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
-// Dummy doctor list
+// Dummy data for doctor list
 const doctors = [
   "Dr. John Smith",
   "Dr. Jane Doe",
@@ -14,7 +14,7 @@ export default function UserPage() {
   const router = useRouter();
   const [userName, setUserName] = useState("User");
 
-  // Load appointments from localStorage
+  // Loading appointments from localStorage
   const [appointments, setAppointments] = useState([]);
 
   // Modal state
@@ -28,7 +28,7 @@ export default function UserPage() {
     note: "",
   });
 
-  // Load userName and appointments on mount
+  // Loading userName and appointments on mount
   useEffect(() => {
     const name = localStorage.getItem("userName");
     if (name) setUserName(name);
@@ -37,12 +37,12 @@ export default function UserPage() {
     if (savedAppointments) setAppointments(JSON.parse(savedAppointments));
   }, []);
 
-  // Update form input
+  // Updating form input
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Book appointment
+  // Booking appointment
   const handleBookAppointment = (e) => {
     e.preventDefault();
 
@@ -55,7 +55,7 @@ export default function UserPage() {
     const updatedAppointments = [...appointments, newAppointment];
     setAppointments(updatedAppointments);
 
-    // Save to localStorage
+    // Saving to localStorage
     localStorage.setItem("appointments", JSON.stringify(updatedAppointments));
 
     setFormData({ doctor: "", date: "", time: "", note: "" });

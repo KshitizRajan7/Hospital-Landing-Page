@@ -130,7 +130,7 @@ export default function UserPage() {
 
       {/* Modal */}
       {modalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/60 bg-opacity-50 flex items-center justify-center z-50">
           <motion.form
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
